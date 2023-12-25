@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input {
+        @apply hover:text-blue-500 transition-colors duration-200 p-2 sm:w-72 md:w-96 sm:text-xl bg-yellow-200 placeholder:text-[1.1rem] text-[1.1rem] focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-opacity-60
+    }
+    .inputEl {
+        @apply rounded-full w-full px-3 py-2 focus:outline-none focus:ring focus:ring-yellow-100 focus:opacity-60 focus:ring-offset-1
+    }
+    .btn {
+       @apply  inline-block text-sm rounded-full bg-yellow-400 font-semibold uppercase px-2 py-2 mt-4 tracking-wide text-stone-800 transition-colors duration-300 hover:bg-yellow-300 focus:bg-yellow-300 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 disabled:cursor-not-allowed
+    }
+    .btn-small {
+       @apply  inline-block text-sm rounded-full bg-yellow-400 font-semibold uppercase px-2 py-1 mt-4 tracking-wide text-stone-800 transition-colors duration-300 hover:bg-yellow-300 focus:bg-yellow-300 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 disabled:cursor-not-allowed
+    }
+}
